@@ -1,0 +1,15 @@
+#version de API y tipo de servicio
+apiVersion: v1
+kind: Service
+#metadata
+metadata:
+  name: servicio-pod-ejm
+#especificaciones tecnicas  
+spec:
+  type: NodePort #Expone la direccion ip del cluster
+  selector: # los selectores nos permiten seleccionar los pod mediante etiquetas 
+    modulo: frontend
+  ports: # se define los puestos de acceso al pod
+    - protocol: TCP
+      port: 8080
+      targetPort: 80

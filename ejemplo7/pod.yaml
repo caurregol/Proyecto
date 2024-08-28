@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    cliente: talento-tech
+    app: proyecto-clase
+    modulo: frontend
+spec:
+  containers:
+  - name: nginx-pod
+    image: nginx:latest
+    ports:
+      - containerPort: 80
