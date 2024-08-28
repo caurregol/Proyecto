@@ -4,7 +4,7 @@ metadata:
   name: nginx-pod
   labels:
     cliente: talento-tech
-    app: proyecto-clase
+    app: proyecto-clase-mintic
     modulo: frontend
 spec:
   containers:
